@@ -1,0 +1,95 @@
+/* Reset default margin and padding for the body */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set background color and adjust other styles as needed */
+  body {
+    background-color: #f0f0f0; /* Replace with your desired background color */
+    color: #000000; /* Set text color to black or an appropriate color for contrast */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif /* Set a font-family for the text */
+    font-size: 10px; /* Set the default font size */
+    min-height: 100vh; /* Set the minimum height of the body to 100% of the viewport height */
+    box-sizing::backdrop; /* Use border-box to include padding and border in the element's total width and height */
+  }
+  
+  /* Style for the header */
+  .page-heading {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Style for the sections container */
+  .sections-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0%;
+  }
+  
+  /* Style for each section */
+  .section {
+    background-color: #d4b9b5; /* Replace with your desired section background color */
+    border: 1px solid #7d6c6c; /* Add a border for better visual separation */
+    border-radius: 0px;
+    margin-bottom: 20px;
+    padding: 0px;
+    width: 100%;
+    max-width: 400px; /* Limit the width for better readability on mobile devices */
+  }
+  section:last-child {
+    margin-right: 0; /* Remove right margin from the last section */
+  }
+  .section-title {
+    position:relative;
+    top:0cm;
+    right:0cm;
+    background-color: #ead813;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+  }
+  .section:nth-child(2) .section-title {
+    background-color: #f60909e7;
+  }
+  .section:last-child .section-title {
+    background-color: #ae1e6f;
+  }
+  /* Style for section titles */
+  .section-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the footer */
+  footer {
+    background-color: #333; /* Replace with your desired footer background color */
+    color: #fff; /* Set text color to white or an appropriate color for contrast */
+    text-align: center; /* Center the content horizontally */
+    padding: 10px; /* Add padding to create space around the footer content */
+  }
+
+  /* Media Query for Mobile Devices */
+  @media only screen and (max-width: 849px) {
+    /* Adjust styles for mobile view */
+    body {
+      font-size: 14px; /* Reduce the font size for better readability on mobile devices */
+    }
+  
+    /* Reset margins and paddings for mobile view */
+    .sections-container {
+      padding: 10px;
+    }
+  
+    .section {
+      margin-bottom: 10px;
+    }
+  
+    .section-title {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+  }
+  

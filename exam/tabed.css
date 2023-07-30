@@ -1,0 +1,110 @@
+/* Reset default margin and padding for the body */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set background color and adjust other styles as needed */
+  body {
+    background-color: #f0f0f0; /* Replace with your desired background color */
+    color: #333; /* Set text color to black or an appropriate color for contrast */
+    font-family: Arial, sans-serif; /* Set a font-family for the text */
+    font-size: 16px; /* Set the default font size */
+    min-height: 100vh; /* Set the minimum height of the body to 100% of the viewport height */
+    box-sizing: border-box; /* Use border-box to include padding and border in the element's total width and height */
+  }
+  
+  /* Style for the header */
+  .page-heading {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Style for the sections container */
+  .sections-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow sections to wrap to the next row if needed */
+    justify-content: center; /* Center the sections horizontally */
+    padding: 20px;
+  }
+  
+  /* Style for each section */
+  .section {
+    background-color: #bfe1e1; /* Replace with your desired section background color */
+    border: 1px solid #ddd; /* Add a border for better visual separation */
+    border-radius: 5px;
+    margin: 10px; /* Add margin around each section */
+    padding: 10px;
+    width: 100%;
+    max-width: 400px; /* Limit the width for better readability on mobile devices */
+  }
+  
+  /* Style for section titles */
+  .section-title {
+    font-weight:bolder;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 0%;
+
+
+  }
+  section:last-child {
+    margin-right: 0; /* Remove right margin from the last section */
+  }
+  .section-title {
+    position:relative;
+    background-color: #351bc7;
+    color: white;
+    padding: 0px;
+    font-weight: bold;
+    font-size: larger;
+    font-style: oblique;
+    border-style:outset;
+  }
+  section-title {
+    position:relative;
+    background-color: #351bc7;
+    color: white;
+    padding: 0%;
+    font-weight: bold;
+    font-size: larger;
+    font-style: oblique;
+    border-style:outset;
+    bottom:0cm;
+    left:0cm;
+
+  }
+  .section:nth-child(2) .section-title {
+    background-color: #f60909e7;
+  }
+  
+  /* Style for the footer */
+  footer {
+    background-color: #333; /* Replace with your desired footer background color */
+    color: #fff; /* Set text color to white or an appropriate color for contrast */
+    text-align: center; /* Center the content horizontally */
+    padding: 10px; /* Add padding to create space around the footer content */
+  }
+  
+  /* Media Query for tablet Devices */
+  @media only screen and (max-width: 1199px) {
+    /* Adjust styles for mobile view */
+    body {
+      font-size: 14px; /* Reduce the font size for better readability on mobile devices */
+    }
+  
+    /* Reset margins and paddings for mobile view */
+    .sections-container {
+      padding: 10px;
+    }
+  
+    .section {
+      margin: 5px; /* Reduce the margin for better spacing on mobile devices */
+    }
+  
+    .section-title {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+  }
+  

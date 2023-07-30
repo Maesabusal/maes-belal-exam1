@@ -1,0 +1,92 @@
+/* CSS to style the page layout and section titles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .page-heading {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  
+  .sections-container {
+    display: flex; /* Use flexbox to arrange sections side by side */
+    justify-content: space-between; /* Add spacing between sections */
+  }
+  
+  .section {
+    border: 1px solid #0a0a0a; */
+    flex: 1; /* Each section takes equal space */
+    margin-right: 20px; /* Add space between sections (optional) */
+    padding: 20px;
+    position: relative; /* Set the section container to relative positioning */
+    background-color:rgb(123, 127, 128);
+    font-family:verdana; 
+  }
+  
+  .section:last-child {
+    margin-right: 0; /* Remove right margin from the last section */
+  }
+  
+  .section-title {
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #ead813;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 0cap;
+    font-family:'Times New Roman', Times, serif;
+    font-size: larger;
+  }
+  
+  .section:nth-child(2) .section-title {
+    background-color: #f60909e7;
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  .section:last-child .section-title {
+    background-color: #ae1e6f;
+    font-family:'Times New Roman', Times, serif; 
+  /* Reset default margin and padding for the body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background color and adjust other styles as needed */
+body {
+    background-color: #f0f0f0; /* Replace with your desired background color */
+    color: #312525; /* Set text color to black or an appropriate color for contrast */
+    font-family: Arial, sans-serif; /* Set a font-family for the text */
+    font-size: 16px; /* Set the default font size */
+    position: relative; /* Set the body as the positioning context */
+    min-height: 100vh; /* Set the minimum height of the body to 100% of the viewport height */
+    box-sizing: border-box; /* Use border-box to include padding and border in the element's total width and height */
+}
+
+/* Style for the header */
+header {
+    background-color: #333; /* Replace with your desired header background color */
+    color: #fff; /* Set text color to white or an appropriate color for contrast */
+    padding: 20px; /* Add padding to create space around header content */
+}
+
+/* Style for the main content */
+main {
+    padding: 20px; /* Add padding to create space around the main content */
+}
+/* Style for the footer */
+footer {
+    background-color: #130404; /* Replace with your desired footer background color */
+    color: #fff; /* Set text color to white or an appropriate color for contrast */
+    text-align: center; /* Center the content horizontally */
+    padding: 10px; /* Add padding to create space around the footer content */
+    position: absolute; /* Set the footer as an absolute positioned element */
+    bottom: 0; /* Position the footer at the bottom of the page */
+    width: 100%; /* Set the footer width to occupy the full width of the page */
+}
+  
+
+
